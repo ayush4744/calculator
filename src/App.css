@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #0fadcd 50%, #0cfbbf 50%); /* Vertical split with blue and green */
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  width: 320px;
+  background-color: #1a0000; /* Background color for the calculator */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+  background-color: #0f5ef0;
+  font-size: 24px;
+  padding: 10px;
+  text-align: right;
+  border-radius: 8px 8px 0 0;
+  height: 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.keypad {
+  background-color: #180101; /* Background color for the keypad area */
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+button {
+  border: none;
+  background-color: #faf3f3;
+  font-size: 24px;
+  padding: 20px 0;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 0;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #ebedf4;
+}
